@@ -4,6 +4,6 @@ basic.forever(function () {
     moisture = smarthome.ReadSoilHumidity(AnalogPin.P1)
     OLED.clear()
     OLED.writeStringNewLine("Moisture:")
-    OLED.writeNumNewLine(smarthome.ReadSoilHumidity(AnalogPin.P1))
+    OLED.writeNumNewLine(moisture)
     basic.pause(500)
 })
